@@ -26,11 +26,10 @@ public class SpringBootConsoleApplication implements CommandLineRunner {
     public void run(String... args) {
         LOGGER.info("Running application on the command line ...");
         try {
-            scraper.scrape(SAINSBURY_URL);
             if (args.length > 0 && StringUtils.isNotEmpty(args[0])) {
                 SAINSBURY_URL = args[0];
             }
-            scraper.scrape(SAINSBURY_URL);
+            System.out.println(scraper.scrape(SAINSBURY_URL));
         } catch (Exception e) {
             LOGGER.error("An error has occured", e);
         }
