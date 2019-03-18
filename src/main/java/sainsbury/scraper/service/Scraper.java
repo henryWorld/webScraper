@@ -1,4 +1,4 @@
-package sainsbury.scrapper.api;
+package sainsbury.scraper.service;
 
 
 import com.google.gson.Gson;
@@ -15,11 +15,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import sainsbury.scrapper.model.CummulatedProductResults;
-import sainsbury.scrapper.model.Product;
-import sainsbury.scrapper.model.ProductGrossAndVat;
-import sainsbury.scrapper.model.ProductResult;
-import sainsbury.scrapper.utils.JsoupDocumentRetriever;
+import sainsbury.scraper.model.CummulatedProductResults;
+import sainsbury.scraper.model.Product;
+import sainsbury.scraper.model.ProductGrossAndVat;
+import sainsbury.scraper.model.ProductResult;
+import sainsbury.scraper.utils.JsoupDocumentRetriever;
 
 import java.math.BigDecimal;
 import java.net.ConnectException;
@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * This class scrapes or crawls  the Sainsbury’s grocery site’s
+ * This class scrapes the Sainsbury’s grocery site’s
  */
 @AllArgsConstructor
 @NoArgsConstructor
@@ -44,7 +44,6 @@ public class Scraper {
 
     /**
      * This method visits the Sainsbury website, returning a json representation of the grocery results
-     *
      * @param url Sainsbury url
      * @return JsonElement
      */

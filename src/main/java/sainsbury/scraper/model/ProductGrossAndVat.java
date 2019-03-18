@@ -1,4 +1,4 @@
-package sainsbury.scrapper.model;
+package sainsbury.scraper.model;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
