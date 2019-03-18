@@ -2,7 +2,9 @@
 Using best practice coding methods, build a Java console application that scrapes the Sainsbury’s grocery site’s - Berries, Cherries, Currants page and returns a JSON array of all the products on the page.
 
 ####PACKAGE AND RUN APPLICATION LOCALLY
-Clone repository locally :
+
+## Clone repository locally :
+# git clone git@github.com:henryWorld/webScraper.git
 
 ## Go to project directory on your command line
 # package it
