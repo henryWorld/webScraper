@@ -9,6 +9,8 @@ Using best practice coding methods, build a Java console application that scrape
 ## Go to project directory on your command line
 ### package it
 mvn package
+### To run tests only
+mvn -U tset
 ### Run it 
 java -jar  target/WebScraper-1.0-SNAPSHOT.jar
 
