@@ -1,4 +1,4 @@
-package sainsbury.scrapper.utils;
+package sainsbury.scraper.utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

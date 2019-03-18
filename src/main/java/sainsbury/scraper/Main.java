@@ -1,8 +1,7 @@
-package sainsbury.scrapper;
+package sainsbury.scraper;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
-import sainsbury.scrapper.service.SpringBootConsoleApplication;
 
 public class Main {
 

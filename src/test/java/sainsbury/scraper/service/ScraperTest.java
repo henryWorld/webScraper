@@ -1,10 +1,8 @@
-package sainsbury.scrapper.service;
+package sainsbury.scraper.service;
 
 import com.google.gson.JsonElement;
 import org.apache.commons.io.IOUtils;
 import org.junit.Test;
-import sainsbury.scrapper.api.JsoupUrlVisitorImpl;
-import sainsbury.scrapper.api.Scraper;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package sainsbury.scrapper.service;
+package sainsbury.scraper;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import sainsbury.scrapper.api.Scraper;
+import sainsbury.scraper.service.Scraper;
 
 /**
  * This class runs the programme from the CommandLine using SpringBoot Application
@@ -15,7 +15,7 @@ import sainsbury.scrapper.api.Scraper;
 
 @SpringBootApplication
 @RequiredArgsConstructor
-@ComponentScan(basePackages = {"sainsbury.scrapper.api"})
+@ComponentScan(basePackages = {"sainsbury.scraper.service"})
 public class SpringBootConsoleApplication implements CommandLineRunner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SpringBootConsoleApplication.class);
@@ -24,6 +24,7 @@ public class SpringBootConsoleApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+        LOGGER.info("Running application on the command line ...");
         try {
             scraper.scrape(SAINSBURY_URL);
             if (args.length > 0 && StringUtils.isNotEmpty(args[0])) {

@@ -10,7 +10,7 @@ Using best practice coding methods, build a Java console application that scrape
 ### package it
 mvn package
 ### To run tests only
-mvn -U tset
+mvn -U test
 ### Run it 
 java -jar  target/WebScraper-1.0-SNAPSHOT.jar
 
